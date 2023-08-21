@@ -1,0 +1,19 @@
+{
+    "@@locale": "en",
+    "common_error_email_format": "Invalid email format",
+    "common_error_empty_string": "{property} is empty",
+    "common_error_invalid_password": "Password does not meet the required format",
+    "common_error_max_characters": "Exceeds the number of allowable characters",
+    "common_error_min_characters": "Does not meet the required character length",
+    "common_error_server_error": "Error {code}: {error}",
+    "common_error_unexpected_error": "Unexpected Error",
+    "common_generic_error": "Oops! Something went wrong",
+    "common_home": "home",
+    "common_no": "no",
+    "common_profile": "profile",
+    "common_yes": "yes",
+    "dialog__message__exit_message": "Are you sure you want to close the application?",
+    "post__empty_post__message": "No posts available",
+    "post__search_bar__label": "Search",
+    "post__empty_post_details__message": "Select a character"
+  }

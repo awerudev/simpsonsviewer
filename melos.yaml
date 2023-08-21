@@ -1,0 +1,42 @@
+name: monorepo
+
+packages:
+  - apps/**
+  - packages/**
+
+command:
+  version:
+    branch: main
+    releaseUrl: true
+
+
+
+scripts:
+  format: melos exec -- dart format . --fix
+
+  analyze: melos exec -- dart analyze --fatal-infos
+
+  clean:
+    run: |
+      melos exec -- \
+        "fvm flutter clean"
+    description: Clean all projects.
+
+  pub_get:
+    run: |
+      melos exec -- \
+        "fvm flutter pub get"
+    description: Get all projects dependencies.    
+  l10n:
+    run: |
+      melos exec -- \
+        "fvm flutter pub run intl_utils:generate"
+    description: Generate all projects localizations.
+
+  build_runner:
+    run: |
+      melos exec -- \
+        "fvm flutter pub run build_runner build --delete-conflicting-outputs"
+    description: Generate all code generated files    
+
+ 
